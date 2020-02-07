@@ -22,7 +22,6 @@ jobs:
         yc init \
         --token=${{ secrets.YC_TOKEN }} \
         --cloud-id=${{ secrets.YC_CLOUD_ID }} \
-        --folder-id=${{ secrets.YC_FOLDER_ID }} \
-        --zone=${{ secrets.YC_COMPUTE_DEFAULT_ZONE }}
+        --folder-id=${{ secrets.YC_FOLDER_ID }}
     - name: Show YandexCloud CLI
       run: yc compute instance create --help
